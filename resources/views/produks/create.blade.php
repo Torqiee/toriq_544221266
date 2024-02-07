@@ -39,7 +39,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Harga Produk:</strong>
-                <input class="form-control" name="harga_jual" placeholder="Harga"></input>
+                <input class="form-control" name="harga_jual" placeholder="Harga">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-start mt-3">

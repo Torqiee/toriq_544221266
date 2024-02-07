@@ -2,12 +2,9 @@
 
 @section('content')
     <div class="row">
-        <div class="col-lg-12 margin-tb">
+        <div class="col-lg-12 margin-tb mt-5 ">
             <div class="pull-left">
                 <h2>Edit Product</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('produks.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -34,7 +31,7 @@
                     <input type="text" name="nama" value="{{ $produk->nama }}" class="form-control" placeholder="nama">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 my-3">
                 <div class="form-group">
                     <strong>Kategori:</strong>
                     <input type="text" name="kategori" value="{{ $produk->kategori }}" class="form-control" placeholder="kategori">
@@ -43,10 +40,10 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Harga:</strong>
-                    <input class="form-control" name="harga_jual" placeholder="harga">{{ $produk->harga_jual }}</input>
+                    <input class="form-control" name="harga_jual" value="{{ $produk->harga_jual }}">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-start mt-5">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>

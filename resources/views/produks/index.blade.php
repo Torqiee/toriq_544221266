@@ -7,7 +7,7 @@
                 <h2></h2>
             </div>
             <div class="pull-right" style="margin-bottom: 10px;">
-                <a class="btn btn-success mt-5" href="{{ route('produks.create') }}"> Tambahkan Produk + </a>
+                <a class="btn btn-primary mt-5" href="{{ route('produks.create') }}"> Tambahkan Produk + </a>
             </div>
         </div>
     </div>
@@ -36,6 +36,8 @@
                 <form action="{{ route('produks.destroy',$produk->id) }}" method="POST">
 
                     <a class="btn btn-primary" href="{{ route('produks.edit',$produk->id) }}">Edit</a>
+                    <a class="btn btn-warning" href="{{ route('produks.show',$produk->id) }}">Show</a>
+
 
                     @csrf
                     @method('DELETE')
